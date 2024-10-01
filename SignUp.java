@@ -27,10 +27,10 @@ public class SignUp extends JFrame {
         super("Application Form");
 
         // Setting the bank image
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/bank.jpg")); // getting the image location from the system
-        Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);// setting the image scale
-        ImageIcon i3 = new ImageIcon(i2); // setting the image icon for set image in the frame.
-        JLabel image = new JLabel(i3);// we can't set the image directly in frame so we'll use this by using the JLabel.
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/bank.jpg"));
+        Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
+        ImageIcon i3 = new ImageIcon(i2); 
+        JLabel image = new JLabel(i3);
         image.setBounds(25, 10, 150, 150);
         add(image);
 
@@ -168,11 +168,10 @@ public class SignUp extends JFrame {
         label.setFont(new Font("Arial",Font.BOLD,15));
         label.setForeground(Color.GREEN);
         add(label);
-
-        //    setting the background image.
-        ImageIcon iii1=new ImageIcon(ClassLoader.getSystemResource("icons/backbg.jpg")); // getting the image location from the system
-        Image iii2=iii1.getImage().getScaledInstance(800,800,Image.SCALE_DEFAULT);// setting the image scalablity
-        ImageIcon iii3=new ImageIcon(iii2); // setting the image icon for set image in the frame.
+        
+        ImageIcon iii1=new ImageIcon(ClassLoader.getSystemResource("icons/backbg.jpg")); 
+        Image iii2=iii1.getImage().getScaledInstance(800,800,Image.SCALE_DEFAULT);
+        ImageIcon iii3=new ImageIcon(iii2); 
         JLabel iiimage=new JLabel(iii3);
         iiimage.setBounds(0,0,800,800);
         add(iiimage);
