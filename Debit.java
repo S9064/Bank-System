@@ -121,9 +121,9 @@ public class Debit extends JFrame{
         });
 
          //    setting the background image.
-         ImageIcon iii1=new ImageIcon(ClassLoader.getSystemResource("icons/backbg.jpg")); // getting the image location from the system
-         Image iii2=iii1.getImage().getScaledInstance(600,600,Image.SCALE_DEFAULT);// setting the image scalablity
-         ImageIcon iii3=new ImageIcon(iii2); // setting the image icon for set image in the frame.
+         ImageIcon iii1=new ImageIcon(ClassLoader.getSystemResource("icons/backbg.jpg")); 
+         Image iii2=iii1.getImage().getScaledInstance(600,600,Image.SCALE_DEFAULT);
+         ImageIcon iii3=new ImageIcon(iii2); 
          JLabel iiimage=new JLabel(iii3);
          iiimage.setBounds(0,0,600,600);
          add(iiimage);
